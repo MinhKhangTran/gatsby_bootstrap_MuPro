@@ -37,8 +37,8 @@ const Services = () => {
         <p className="lead text-secondary mb-5">
           I'm baby activated charcoal yr occupy synth retro kitsch portland.{" "}
         </p>
-        <Row>
-          <Col md={6}>
+        <Row className="row_service">
+          <Col className="col_service" md={6}>
             {serviceArray.map((service) => {
               return (
                 <div key={service.id} className="service_feat d-flex mt-lg-5">
@@ -59,6 +59,7 @@ const Services = () => {
           </Col>
           <Col md={6} className="d-none d-md-flex">
             <GatsbyImage
+              className="service_img"
               image={getImage(serviceImg)!}
               alt="a mic in a mixing room"
             />
