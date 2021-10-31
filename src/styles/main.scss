@@ -1,20 +1,48 @@
 // load custom font from google fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 @import "~bootstrap/scss/functions";
 // redefine variables not dependent on anything else
 
 // global variables
-
+$primary: #6610f2;
 // theme color variables
 
 // font family
+$font-familiy-base: "Open Sans", sans-serif;
 
 // links
+
+// navbar
+$navbar-light-color: #6610f2;
+$navbar-light-toggler-border-color: rgba(#6610f2, 0.1);
 
 // import variables and mixins files (so you can use them below)
 // any redefined vars above will be incorporated into the files (e.g. in maps)
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
+
+//Get indigo color
+$indigo-colors: (
+  "indigo-100": $indigo-100,
+  "indigo-200": $indigo-200,
+  "indigo-300": $indigo-300,
+  "indigo-400": $indigo-400,
+  "indigo-500": $indigo-500,
+  "indigo-600": $indigo-600,
+  "indigo-700": $indigo-700,
+  "indigo-800": $indigo-800,
+  "indigo-900": $indigo-900,
+);
+//create indigo shapes
+@each $color, $value in $indigo-colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+  .text-#{$color} {
+    color: $value;
+  }
+}
 
 // utility api - import utility file first
 // import bootstrap whole sass lib (incorporates all above redefined vars & values)
@@ -23,3 +51,4 @@
 //import custom components
 @import "./footer";
 @import "./navigation";
+@import "./hero";
