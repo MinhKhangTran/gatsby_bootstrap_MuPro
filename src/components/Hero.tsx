@@ -16,7 +16,7 @@ const Hero = () => {
         <article className="text-white">
           <h1>Let's make some fresh beats</h1>
           <p className="lead">We are your local music producer</p>
-          <Button>Book Us</Button>
+          <Button size="lg">Book Us</Button>
         </article>
       </Container>
     </section>

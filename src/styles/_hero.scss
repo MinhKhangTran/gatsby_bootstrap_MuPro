@@ -21,3 +21,31 @@
     place-items: center;
   }
 }
+@media screen and (min-width: 768px) {
+  #hero {
+    h1 {
+      font-size: 3rem;
+    }
+
+    .hero_text_wrapper {
+      right: 0;
+
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  #hero {
+    h1 {
+      font-size: 4rem;
+    }
+
+    .hero_text_wrapper {
+      right: 0;
+
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}
