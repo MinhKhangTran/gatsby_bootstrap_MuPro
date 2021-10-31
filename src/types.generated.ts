@@ -2826,3 +2826,14 @@ export type SeoQuery = {
     | null
     | undefined;
 };
+
+export type ServiceQueryVariables = Exact<{ [key: string]: never }>;
+
+export type ServiceQuery = {
+  allFile: {
+    totalCount: number;
+    nodes: Array<{
+      childImageSharp?: { gatsbyImageData: unknown } | null | undefined;
+    }>;
+  };
+};
