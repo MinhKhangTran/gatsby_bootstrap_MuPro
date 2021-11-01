@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Project from "../components/Project";
 import SEO from "../components/Seo";
 import Services from "../components/Services";
+import Testimonials from "../components/Testimonials";
 
 // markup
 const IndexPage = () => {
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <Hero />
       <Services />
       <Project />
+      <Testimonials />
     </Layout>
   );
 };

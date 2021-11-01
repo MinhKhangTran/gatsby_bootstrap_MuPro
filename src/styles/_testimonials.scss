@@ -1,0 +1,22 @@
+.testimonials_wrapper {
+  display: grid;
+  .container {
+    inset: 0;
+  }
+  .single_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) {
+  .testimonials_wrapper {
+    .single_text {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+}
