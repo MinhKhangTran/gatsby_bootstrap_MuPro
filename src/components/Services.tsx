@@ -31,7 +31,7 @@ const Services = () => {
     },
   ];
   return (
-    <section id="service" className="section">
+    <section id="services" className="section">
       <Container>
         <h2>This is what we offer</h2>
         <p className="lead text-secondary mb-5">

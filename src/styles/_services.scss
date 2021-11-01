@@ -1,4 +1,4 @@
-#service {
+#services {
   h2 {
     font-size: 2rem;
     font-weight: 500;
@@ -20,7 +20,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  #service {
+  #services {
     h2,
     p.lead {
       text-align: center;
