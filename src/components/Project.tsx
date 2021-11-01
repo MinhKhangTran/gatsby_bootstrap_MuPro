@@ -18,7 +18,7 @@ const Project = () => {
         <p className="lead subtitle text-secondary mb-5">
           I'm baby activated charcoal yr occupy synth retro kitsch portland.
         </p>
-        <Row>
+        <Row className="project_row">
           {projects.map((project) => {
             const projectImage = project.img
               ?.gatsbyImageData as IGatsbyImageData;
