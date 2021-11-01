@@ -7,6 +7,9 @@ fragment Project on Project {
   title
   excerpt
   content
+  date
+  author
+  readingTime
   createdBy {
     ... on User {
       remoteTypeName: __typename
