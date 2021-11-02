@@ -1,6 +1,7 @@
 import * as React from "react";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
+import Pricing from "../components/Pricing";
 import Project from "../components/Project";
 import SEO from "../components/Seo";
 import Services from "../components/Services";
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <Services />
       <Project />
       <Testimonials />
+      <Pricing />
     </Layout>
   );
 };
