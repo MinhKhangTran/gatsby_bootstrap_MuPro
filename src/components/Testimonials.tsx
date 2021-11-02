@@ -24,6 +24,33 @@ const Testimonials = () => {
     "aria-busy": loading,
   };
 
+  const testimonialsArray = [
+    {
+      id: 1,
+      icon: <i aria-hidden="true" className="bi bi-badge-3d-fill"></i>,
+      text: "Peter Production",
+      title: "peterproduction.com",
+    },
+    {
+      id: 2,
+      icon: <i aria-hidden="true" className="bi bi-badge-4k-fill"></i>,
+      text: "Dennis Mixing",
+      title: "dennismixing.com",
+    },
+    {
+      id: 3,
+      icon: <i aria-hidden="true" className="bi bi-badge-8k-fill"></i>,
+      text: "John Podcast",
+      title: "johnpodcast.com",
+    },
+    {
+      id: 4,
+      icon: <i aria-hidden="true" className="bi bi-badge-cc-fill"></i>,
+      text: "Jane Production",
+      title: "janeproduction.com",
+    },
+  ];
+
   return (
     <section id="testimonials" className="section">
       <div className="testimonials_wrapper">
@@ -94,6 +121,21 @@ const Testimonials = () => {
         <p className="lead text-secondary mb-5">
           I'm baby activated charcoal yr occupy synth retro kitsch portland.{" "}
         </p>
+        <Row>
+          {testimonialsArray.map((testi) => {
+            return (
+              <Col key={testi.id} lg={6} className="d-flex  mb-4">
+                <div className="icon_wrapper bg-indigo-300 text-white d-flex justify-content-center align-items-center rounded me-3">
+                  {testi.icon}
+                </div>
+                <div className="text_wrapper ">
+                  <h3 className="text-uppercase mb-0">{testi.title}</h3>
+                  <p>{testi.text}</p>
+                </div>
+              </Col>
+            );
+          })}
+        </Row>
       </Container>
     </section>
   );
