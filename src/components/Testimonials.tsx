@@ -124,7 +124,7 @@ const Testimonials = () => {
         <Row>
           {testimonialsArray.map((testi) => {
             return (
-              <Col key={testi.id} lg={6} className="d-flex  mb-4">
+              <Col key={testi.id} lg={6} className="d-flex column_wrapper">
                 <div className="icon_wrapper bg-indigo-300 text-white d-flex justify-content-center align-items-center rounded me-3">
                   {testi.icon}
                 </div>
