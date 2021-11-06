@@ -4722,6 +4722,18 @@ export type WebPOptions = {
   quality?: Maybe<Scalars["Int"]>;
 };
 
+export type CtaQueryVariables = Exact<{ [key: string]: never }>;
+
+export type CtaQuery = {
+  allFile: {
+    edges: Array<{
+      node: {
+        childImageSharp?: { gatsbyImageData: unknown } | null | undefined;
+      };
+    }>;
+  };
+};
+
 export type ProjectQueryVariables = Exact<{ [key: string]: never }>;
 
 export type ProjectQuery = {

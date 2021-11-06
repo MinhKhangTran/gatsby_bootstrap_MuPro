@@ -55,7 +55,7 @@ const Pricing = () => {
         <Row className="justify-content-center gap-3 mx-auto">
           {pricingArray.map((pricing) => {
             return (
-              <Col lg={3} className="pricing_wrapper shadow">
+              <Col key={pricing.id} lg={3} className="pricing_wrapper shadow">
                 {pricing.popular && (
                   <Badge pill bg="primary">
                     Most Popular

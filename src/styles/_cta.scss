@@ -1,0 +1,19 @@
+#cta {
+  display: grid;
+  .cta_text {
+    grid-area: 1/1;
+    position: relative;
+    place-items: center;
+    display: grid;
+  }
+}
+@media screen and (min-width: 992px) {
+  #cta {
+    h2 {
+      font-size: 2.25rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
