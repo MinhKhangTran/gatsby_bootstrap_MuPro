@@ -23,7 +23,12 @@ const CTA = () => {
           <h2 className="">Book a session now</h2>
           <p className="lead">I'm baby vice knausgaard lyft street art. </p>
 
-          <Button size={`${isPageWide ? "lg" : ""}`}>Get Started</Button>
+          <Button
+            // @ts-expect-error
+            size={`${isPageWide ? "lg" : ""}`}
+          >
+            Get Started
+          </Button>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import * as React from "react";
+import Contact from "../components/Contact";
 import CTA from "../components/CTA";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
@@ -19,6 +20,7 @@ const IndexPage = () => {
       <Testimonials />
       <Pricing />
       <CTA />
+      <Contact />
     </Layout>
   );
 };

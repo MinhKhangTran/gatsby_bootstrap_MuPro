@@ -1,0 +1,40 @@
+#contact {
+  h2,
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 1.125rem;
+  }
+  .erste_reihe {
+    border-bottom: 1px solid $indigo-100;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #contact {
+    h2,
+    .subtitle {
+      text-align: center;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    h4,
+    p.lead {
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  #contact {
+    h3 {
+      font-size: 2rem;
+    }
+    h4,
+    p.lead {
+      font-size: 1.125rem;
+    }
+  }
+}

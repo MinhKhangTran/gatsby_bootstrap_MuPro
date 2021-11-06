@@ -68,7 +68,7 @@ const Pricing = () => {
                 <p className="text-secondary">{pricing.text}</p>
                 {pricing.feat.map((feat) => {
                   return (
-                    <div className="d-flex">
+                    <div key={feat.id} className="d-flex">
                       <i className="bi bi-check-lg text-primary me-2"></i>
                       <p key={feat.id}>{feat.text}</p>
                     </div>
