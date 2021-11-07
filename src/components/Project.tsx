@@ -10,6 +10,7 @@ const Project = () => {
     allGraphCmsProject: { nodes },
   }: ProjectQuery = useStaticQuery(query);
   const projects = nodes;
+  console.log(projects);
 
   return (
     <section id="project" className="section">
@@ -20,8 +21,8 @@ const Project = () => {
         </p>
         <Row className="project_row">
           {projects.map((project) => {
-            const projectImage = project.img
-              ?.gatsbyImageData as IGatsbyImageData;
+            // @ts-expect-error
+            const projectImage = project.img as IGatsbyImageData;
             return (
               <Col key={project.id} lg={4} md={6} className="mb-5 mb-lg-0">
                 <GatsbyImage
