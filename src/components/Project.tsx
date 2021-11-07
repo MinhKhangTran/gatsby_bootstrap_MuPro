@@ -10,7 +10,6 @@ const Project = () => {
     allGraphCmsProject: { nodes },
   }: ProjectQuery = useStaticQuery(query);
   const projects = nodes;
-  console.log(projects);
 
   return (
     <section id="project" className="section">
@@ -30,7 +29,7 @@ const Project = () => {
                   alt={project.title!}
                   className="project_img"
                 />
-                <Link to="/todo">
+                <Link to={`/${project.slug}`}>
                   <h3 className="text-primary mt-1 mb-2">{project.title}</h3>
                 </Link>
                 <p className="lead text-secondary">{project.excerpt}</p>
@@ -66,6 +65,7 @@ export const query = graphql`
         date
         title
         readingTime
+        slug
         img {
           gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
         }
