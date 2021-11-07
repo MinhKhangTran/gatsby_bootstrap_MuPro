@@ -10,6 +10,7 @@ fragment Project on Project {
   date
   author
   readingTime
+  slug
   createdBy {
     ... on User {
       remoteTypeName: __typename
