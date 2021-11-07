@@ -3,7 +3,18 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../images/MuPro.svg";
 
-const Navigation = () => {
+const Navigation = ({ path }: { path?: boolean }) => {
+  if (path) {
+    return (
+      <Navbar bg="white" expand="lg">
+        <Container>
+          <Link to="/" className="navbar-brand text-primary">
+            <img src={logo} alt="navbar-logo" />
+          </Link>
+        </Container>
+      </Navbar>
+    );
+  }
   return (
     <Navbar bg="white" expand="lg">
       <Container>

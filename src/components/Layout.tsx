@@ -5,12 +5,18 @@ import Navigation from "./Navigation";
 import { SkipNavLink, SkipNavContent } from "@reach/skip-nav";
 import "@reach/skip-nav/styles.css";
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({
+  children,
+  path,
+}: {
+  children: React.ReactNode;
+  path?: boolean;
+}) => {
   return (
     <>
       <SkipNavLink />
       <div>
-        <Navigation />
+        <Navigation path={path} />
         <SkipNavContent />
         <main>{children}</main>
         <Footer />
