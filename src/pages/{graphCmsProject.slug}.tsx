@@ -16,7 +16,7 @@ const SingleProject = ({ data }: { data: SingleProjectQuery }) => {
 
   return (
     <Layout path>
-      <SEO title="blub" />
+      <SEO title={data.graphCmsProject?.title!} />
       <div className="single_project_image text-center">
         <GatsbyImage
           image={getImage(singleProjectImg)!}
