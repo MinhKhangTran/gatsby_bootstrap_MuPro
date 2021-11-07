@@ -7,12 +7,10 @@ import ReactMarkdown from "react-markdown";
 
 import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { SingleProjectQuery } from "../types.generated";
-import { useMediaQuery } from "../helper/useMediaQuery";
+
 import Moment from "react-moment";
 
 const SingleProject = ({ data }: { data: SingleProjectQuery }) => {
-  console.log(data);
-  let isPageWide = useMediaQuery("(min-width: 992px)");
   // @ts-expect-error
   const singleProjectImg = data.graphCmsProject.img as IGatsbyImageData;
 
